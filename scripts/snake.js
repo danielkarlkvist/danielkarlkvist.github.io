@@ -17,14 +17,13 @@ var createDeadSnakeInterval;
 var isAlive = false;
 var snakeIsTurning = false;
 
-const canvasColor = "royalblue";
+const canvasColor = "#6495ed";
 const headColor = "black"
 const snakeColor = "rgba(0, 0, 0, 0.7)";
-const foodColor = "#FAB935";
-const deadSnakeColor = "#D61A3C";
+const foodColor = "#ffe787";
+const deadSnakeColor = "#e83151";
 
 window.onload = function() {
-    console.log("hej");
     this.snakeSetup();
 };
 
@@ -63,6 +62,7 @@ function snakeSetup() {
     spawnNewRectAt(playerPositionX, playerPositionY, headColor);
     spawnNewRectAt(foodPositionX, foodPositionY, foodColor);
     updateScoreLabel();
+    updateHighscoreLabel();
 }
 
 function createCanvas() {
@@ -100,10 +100,20 @@ function updateScoreLabel() {
     cntext.fillText(snakeLength, xPos, yPos);
 }
 
+function updateHighscoreLabel() {
+    cntext.font = "24px Helvetica Neue Bold";
+    cntext.fillStyle = "rgba(0, 0, 0, 0.5)";
+
+    cntext.textAlign = "center"; // horisontal alignment
+
+    var xPos = canvas.width / 2;
+    var yPos = canvas.height / 2 + 50;
+    cntext.fillText("Highscore: " + highScore, xPos, yPos);
+}
+
 function updateHighscore() {
     if (snakeLength > highScore) {
         highScore = snakeLength;
-        document.getElementById("snake-highscore").innerHTML = "Highscore: " + highScore;
     }
 }
 
@@ -167,6 +177,7 @@ function update() {
 
     spawnNewRectAt(foodPositionX, foodPositionY, foodColor);
     updateScoreLabel();
+    updateHighscoreLabel();
 }
 
 function keyPush(event) {
@@ -234,6 +245,7 @@ function die() {
     // repaint everything
     fillCanvas();
     updateScoreLabel();
+    updateHighscoreLabel();
     spawnNewRectAt(foodPositionX, foodPositionY, foodColor);
 
     if (isAlive) {
