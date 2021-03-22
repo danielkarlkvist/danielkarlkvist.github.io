@@ -1,3 +1,7 @@
+body {
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
 .full-page-container {
     height: 300vh;
     width: 100vw;
