@@ -24,7 +24,7 @@ Here are some of the biggest challenges I have encountered during this project.
 
 ### Scroll snap
 Getting the initial layout of the page to work as intended was quite a big problem in the beginning. 
-I wanted something that worked similarly to [Teslas website](https://www.tesla.com), with each project having its own "snap".
+I wanted something that worked similarly to [Tesla's website](https://www.tesla.com), with each project having its own "snap".
 I did not initially know that CSS had this built into it and tried using JavaScript. 
 This solution worked but was a bit laggy in some browsers which had me looking for other solutions, this is when I found the CSS Scroll Snap.
 
