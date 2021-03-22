@@ -1,5 +1,5 @@
 # danielkarlkvist portfolio website
-This website was created to display some of the projects I have done over the years. However, anyone is welcome to use the code available here. 
+This website was created to display some of the projects I have done over the years and will be updated as I create more projects in the future. However, anyone is welcome to use the code available here. 
 
 ## URL
 Should eventually be available at danielkarlkvist.com. </br>
