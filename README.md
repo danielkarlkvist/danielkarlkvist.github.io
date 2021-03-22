@@ -1,4 +1,4 @@
-# danielkarlkvist portfolio
+# danielkarlkvist portfolio website
 This website was created to display some of the projects I have done over the years. However, anyone is welcome to use the code available here. 
 
 ## URL
