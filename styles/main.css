@@ -2,8 +2,23 @@ body {
     font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
-.full-page-container {
-    height: 300vh;
+.full-page-container {}
+
+.cover-page-container {
     width: 100vw;
+    height: 100vh;
+}
+
+.scroll-snap-container {
+    scroll-snap-type: y mandatory;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.scroll-snap-element {
+    scroll-snap-align: center;
+}
+
+.scroll-snap-element:nth-child(odd) {
     background-color: cornflowerblue;
 }
