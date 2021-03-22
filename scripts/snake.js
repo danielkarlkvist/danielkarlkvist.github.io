@@ -17,11 +17,11 @@ var createDeadSnakeInterval;
 var isAlive = false;
 var snakeIsTurning = false;
 
-const canvasColor = "#6495ed";
+const canvasColor = "white";
 const headColor = "black"
 const snakeColor = "rgba(0, 0, 0, 0.7)";
-const foodColor = "#ffe787";
-const deadSnakeColor = "#e83151";
+const foodColor = "rgb(98, 161, 246)";
+const deadSnakeColor = "#D61A3C";
 
 window.onload = function() {
     this.snakeSetup();
@@ -90,7 +90,7 @@ function moveSnake() {
 
 function updateScoreLabel() {
     cntext.font = "72px Helvetica Neue Bold";
-    cntext.fillStyle = "rgba(0, 0, 0, 0.5)";
+    cntext.fillStyle = "rgb(0, 0, 0, 0.3)";
 
     cntext.textAlign = "center"; // horisontal alignment
     cntext.textBaseline = "middle"; // vertical alignment
@@ -101,8 +101,8 @@ function updateScoreLabel() {
 }
 
 function updateHighscoreLabel() {
-    cntext.font = "24px Helvetica Neue Bold";
-    cntext.fillStyle = "rgba(0, 0, 0, 0.5)";
+    cntext.font = "18px Helvetica Neue Bold";
+    cntext.fillStyle = "rgba(0, 0, 0, 0.15)";
 
     cntext.textAlign = "center"; // horisontal alignment
 
