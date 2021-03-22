@@ -5,6 +5,11 @@ This website was created to display some of the projects I have done over the ye
 Should eventually be available at danielkarlkvist.com. </br>
 Can be found at [danielkarlkvist.github.io](https://danielkarlkvist.github.io) currently.
 
+## Webpage content
+* ```Intro``` Some things about me.
+* ```Snake``` Simple snake game created in JavaScript.
+* ```Square Up``` The first app I published on the iOS App Store.
+
 ## Built using
 * HTML
 * CSS
