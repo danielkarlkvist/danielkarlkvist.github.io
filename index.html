@@ -9,15 +9,23 @@
     <!-- Styles -->
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/snake.css">
 
     <!-- Scripts -->
+    <script src="scripts/snake.js" type="text/javascript"></script>
 </head>
 
 <body>
     <div class="full-page-container">
         <div class="scroll-snap-container">
             <section class="scroll-snap-element cover-page-container"></section>
-            <section class="scroll-snap-element cover-page-container"></section>
+            <section class="scroll-snap-element cover-page-container snake-section">
+                <h1>Snake</h1>
+                <div class="snake-game-container">
+                    <p id="snake-highscore" class="small-text">Highscore: 1</p>
+                    <canvas id="snake-canvas"></canvas>
+                </div>
+            </section>
             <section class="scroll-snap-element cover-page-container"></section>
             <section class="scroll-snap-element cover-page-container"></section>
             <section class="scroll-snap-element cover-page-container"></section>
