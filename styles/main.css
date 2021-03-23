@@ -22,3 +22,25 @@ body {
 .scroll-snap-element:nth-child(odd) {
     background-color: cornflowerblue;
 }
+
+.transition-fast {
+    transition: 0.2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 96px;
+}
+
+.small-text {
+    font-size: 24px;
+}
