@@ -1,5 +1,3 @@
-// JavaScript Document
-
 var xSpeed, ySpeed;
 var playerPositionX, playerPositionY;
 var foodPositionX, foodPositionY;
@@ -16,6 +14,8 @@ var createDeadSnakeInterval;
 
 var isAlive = false;
 var snakeIsTurning = false;
+
+var deadSnakeIndex;
 
 const canvasColor = "white";
 const headColor = "black"
@@ -86,6 +86,16 @@ function fillCanvas() {
 function moveSnake() {
     playerPositionX += xSpeed;
     playerPositionY += ySpeed;
+}
+
+function hideInformationText() {
+    var instructionText = document.getElementById("snake-instruction-text");
+    instructionText.style.opacity = "0";
+}
+
+function showInformationText() {
+    var instructionText = document.getElementById("snake-instruction-text");
+    instructionText.style.opacity = "1";
 }
 
 function updateScoreLabel() {
@@ -233,6 +243,7 @@ function keyPush(event) {
         case 32:
             if (!isAlive) {
                 resetValues();
+                hideInformationText();
                 interval = setInterval(update, 90);
                 if (ySpeed !== -1) {
                     xSpeed = 0;
@@ -260,9 +271,9 @@ function die() {
     }
 
     isAlive = false;
-}
 
-var deadSnakeIndex;
+    showInformationText();
+}
 
 function createDeadSnake() {
     fillSnake();
