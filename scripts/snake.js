@@ -89,7 +89,7 @@ function moveSnake() {
 }
 
 function updateScoreLabel() {
-    cntext.font = "72px Helvetica Neue Bold";
+    cntext.font = "bold 72px Helvetica";
     cntext.fillStyle = "rgb(0, 0, 0, 0.3)";
 
     cntext.textAlign = "center"; // horisontal alignment
@@ -101,7 +101,7 @@ function updateScoreLabel() {
 }
 
 function updateHighscoreLabel() {
-    cntext.font = "18px Helvetica Neue Bold";
+    cntext.font = "bold 18px Helvetica";
     cntext.fillStyle = "rgba(0, 0, 0, 0.15)";
 
     cntext.textAlign = "center"; // horisontal alignment
@@ -182,8 +182,11 @@ function update() {
 
 function keyPush(event) {
     switch (event.keyCode) {
-        // left
+        // ARROWS
+
+        // left arrow, A
         case 37:
+        case 65:
             if (isAlive && snakeIsTurning == false) {
                 if (xSpeed !== 1) {
                     xSpeed = -1;
@@ -192,8 +195,9 @@ function keyPush(event) {
                 }
             }
             break;
-            // right
+            // up arrow and W
         case 38:
+        case 87:
             if (isAlive && snakeIsTurning == false) {
                 if (ySpeed !== 1) {
                     xSpeed = 0;
@@ -202,8 +206,9 @@ function keyPush(event) {
                 }
             }
             break;
-            // down
+            // right arrow, D
         case 39:
+        case 68:
             if (isAlive && snakeIsTurning == false) {
                 if (xSpeed !== -1) {
                     xSpeed = 1;
@@ -212,8 +217,9 @@ function keyPush(event) {
                 }
             }
             break;
-            // up
+            // down arrow and S
         case 40:
+        case 83:
             if (isAlive && snakeIsTurning == false) {
                 if (ySpeed !== -1) {
                     xSpeed = 0;
@@ -222,6 +228,7 @@ function keyPush(event) {
                 }
             }
             break;
+
             // space
         case 32:
             if (!isAlive) {
