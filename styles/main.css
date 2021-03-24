@@ -2,8 +2,6 @@ body {
     font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
-.full-page-container {}
-
 .cover-page-container {
     width: 100vw;
     height: 100vh;
@@ -43,4 +41,8 @@ h1 {
 
 .small-text {
     font-size: 24px;
+}
+
+.fade-on-scroll-element {
+    opacity: 0;
 }
