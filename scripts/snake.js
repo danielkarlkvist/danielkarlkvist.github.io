@@ -19,7 +19,7 @@ var deadSnakeIndex;
 
 const canvasColor = "white";
 const headColor = "black"
-const snakeColor = "rgba(0, 0, 0, 0.7)";
+const snakeColor = "rgba(0, 0, 0, 0.5)";
 const foodColor = "rgb(98, 161, 246)";
 const deadSnakeColor = "#D61A3C";
 
