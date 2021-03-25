@@ -14,6 +14,7 @@
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="scripts/fadeOnScroll.js" type=text/javascript></script>
+    <script src="scripts/popupContainer.js" type="text/javascript"></script>
     <script src="scripts/snake.js" type="text/javascript"></script>
 </head>
 
@@ -21,7 +22,12 @@
     <div class="full-page-container">
         <div class="scroll-snap-container">
             <section class="scroll-snap-element cover-page-container"></section>
-            <section class="scroll-snap-element cover-page-container snake-section">
+            <section id="snake-section" class="scroll-snap-element cover-page-container snake-section">
+                <div id="snake-popup-container" class="popup-container transition-slow">
+                    <div class="popup-content transition-slow">
+
+                    </div>
+                </div>
                 <h1 class="fade-on-scroll-element">Snake</h1>
                 <div class="snake-game-container">
                     <canvas id="snake-canvas" class="fade-on-scroll-element"></canvas>

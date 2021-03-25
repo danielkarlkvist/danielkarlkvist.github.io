@@ -2,29 +2,6 @@ body {
     font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
-.cover-page-container {
-    width: 100vw;
-    height: 100vh;
-}
-
-.scroll-snap-container {
-    scroll-snap-type: y mandatory;
-    overflow-y: auto;
-    height: 100vh;
-}
-
-.scroll-snap-element {
-    scroll-snap-align: center;
-}
-
-.scroll-snap-element:nth-child(odd) {
-    background-color: cornflowerblue;
-}
-
-.transition-fast {
-    transition: 0.2s;
-}
-
 h1,
 h2,
 h3,
@@ -41,6 +18,60 @@ h1 {
 
 .small-text {
     font-size: 24px;
+}
+
+.cover-page-container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.scroll-snap-container {
+    scroll-snap-type: y mandatory;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.scroll-snap-element {
+    scroll-snap-align: center;
+}
+
+
+/* TODO
+    Remove
+*/
+
+.scroll-snap-element:nth-child(odd) {
+    background-color: cornflowerblue;
+}
+
+.popup-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 0.5);
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    width: 70%;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.transition-fast {
+    transition: 0.2s;
+}
+
+.transition-slow {
+    transition: 1s;
 }
 
 .fade-on-scroll-element {
