@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    /* W4indow is scrolled */
+    /* Window is scrolled */
     $(".scroll-snap-container").scroll(function() {
         /* Check the location of each desired element */
         $('.fade-on-scroll-element').each(function() {
