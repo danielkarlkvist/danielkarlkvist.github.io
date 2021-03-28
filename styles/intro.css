@@ -1,0 +1,10 @@
+.intro-section {
+    background-image: url("../images/mountain.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
